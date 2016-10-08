@@ -29,7 +29,7 @@ Open the Google Document located at [https://docs.google.com/document/d/17wBTsu0
 Convert the document into html.  Your HTML should contain the following tags upon completion: 
 
 - Paragraph
-- Image
+- Image - The image you need is inside of the images folder.
 - Hyperlink
 - Heading 1
 - Heading 2
