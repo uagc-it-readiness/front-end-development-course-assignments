@@ -7,7 +7,7 @@ body{
     width:960px;
 }
 h1{color:red}
-h2,h4{color: #FFA500}
+h2,h4{color: #FFA500; border: thin solid #A0A0A4;}
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
