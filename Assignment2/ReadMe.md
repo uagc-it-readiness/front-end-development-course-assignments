@@ -30,7 +30,7 @@ Add CSS in the main.css file to apply the following rules.
 - All text inside of the element with the class 'main-point' should have the following font applied to it. `"Courier New", Courier, monospace`
 - All text inside of an `h2` tag should be bold. Use CSS and not a `strong` tag to do this.
 
-Your end result should look something like this: 
+Your end result should look something like this: [Result](result.png)
 
 
 ## Part 5 - File paths
