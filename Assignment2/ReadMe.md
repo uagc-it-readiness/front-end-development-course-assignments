@@ -1,5 +1,5 @@
 # Assignment 2
-In this assignment, we will be doing some HTML we have already covered, some new HTML, and some basic CSS.  We will also have a file directory path excercise.
+In this assignment, we will be doing some HTML we have already covered, some new HTML, and some basic CSS.  We will also have a file directory path exercise.
 
 ## Part 1 - Review
 Practice your HTML by performing the following updates to index.html inside of the Essay folder.
@@ -34,3 +34,16 @@ Your end result should look something like this:
 
 
 ## Part 5 - File paths
+You will find 3 html files inside of the "Files" folder.  Each file contains 3 hyperlinks.  You are to update the `href` values to match the file path of the text of that specific hyperlink. 
+
+Example:
+index.html
+```
+    <h1>Main Page</h1>
+    <ul>
+        <li><a href="index.html" title="Main Page">Index.html</a></li>
+        <li><a href="folder1/subpage.html" title="Sub Page">SubPage.html</a></li>
+        <li><a href="folder1/folder2/verysubpage.html" title="Very Sub Page">VerySubPage.html</a></li>
+    </ul
+```
+Refer to the [Basic HTML presentation](https://uagc-it-readiness.github.io/front-end-development-course-info/presentations/html/basics.html#/5/5) if you need a refresher.
