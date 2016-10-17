@@ -66,4 +66,4 @@ Leverage decendant selectors to apply the following styles without them affectin
   - Align the text to the center.
  
  
-## [Final Product](final.png)
+## [Final Product](final.PNG)
