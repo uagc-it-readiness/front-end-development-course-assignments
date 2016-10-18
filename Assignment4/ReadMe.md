@@ -46,6 +46,7 @@ Style the content to make it more readable.
 - `side-bar`
   - Set the background to `#e7e7e7`. This will help identify what space this element takes up
   - Float the element so it is rendered to the right of `main-content`
+  - Set the width of the content to 20% of the available space
 - `content-footer`
   - Set the top border of the content to be 1 pixel wide solid and #000000;
   - Clear the element so it appears below `main-content` and `side-bar`
