@@ -35,7 +35,7 @@ Change the default styling of the list and create a simplistic image gallery.  A
   - Remove the default padding and margin.
 - `gallery-image`
   - Make the images display in a line similar to the links in Part 2 of the excercise.
-  - Add 20 pixels of padding and 20 pixels of margin around each image.
+  - Add 10 pixels of padding and 10 pixels of margin around each image.
 
 ## Part 4: Content with sidebar
 Style the content to make it more readable.
