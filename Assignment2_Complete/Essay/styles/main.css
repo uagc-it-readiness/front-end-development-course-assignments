@@ -1,0 +1,22 @@
+body{
+    margin:20px auto;
+    width:960px;
+}
+
+/*Use the # sign to target id*/
+#header{
+    color:#DC143C;
+}
+
+span{
+    text-decoration:underline;
+}
+
+.main-point{
+    font-family:"Courier New", Courier, monospace;
+}
+
+h2 {
+    /*H2s already have bold as a property*/
+    font-weight:bold;
+}
