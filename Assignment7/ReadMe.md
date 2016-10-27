@@ -1,5 +1,5 @@
-# Assignment 6
-Assignment 6 is going to open up the opportunity to develop your own CSS style.  Look at the [final.png](final.png) in your repository and do your best to recreate it.  Add classes to the HTML as you see fit.
+# Assignment 7
+Assignment 7 is going to open up the opportunity to develop your own CSS style.  Look at the [final.png](final.png) in your repository and do your best to recreate it.  Add classes to the HTML as you see fit.
 
 
 ## Colors
