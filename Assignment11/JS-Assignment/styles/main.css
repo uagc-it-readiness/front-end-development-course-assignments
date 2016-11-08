@@ -22,10 +22,13 @@ input[type=text].invalid{
     border:1px solid red;
 }
 section{
-    float:left;
     width:50%;
-    height:400px;
     padding:20px;
+    margin:0 auto;
+}
+
+.errors{
+    color:#ff0000;
 }
 
 .control-panel{

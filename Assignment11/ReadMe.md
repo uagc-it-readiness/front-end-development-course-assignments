@@ -1,14 +1,19 @@
-# Assignment 10 
+# Assignment 11 
 
 ## Javascript
-This assignment is going to go over most of what we have covered this week.  Perform all of these tasks in the JS-Assignment folder. You should only need to modify the main.js file.
+You are being provided a document that automatically retreives the values of all the input boxes on the screen. Using what we have learned, perform the following actions.
 
-There is existing code inside of main.js that is executed when the 'Update Values' button is pressed.  The existing code currently retreieves the values from the text boxes and logs them to the console.  Add code to calculate out the values described in the strong tags and  populate the corresponding spad tags with the values.
+- Create a new array called `messages`.  This array is going to be used to create a list of validation messages.
+    - If first name is empty, add 'First Name is required' to the `messages` array.
+    - If last name is empty, add 'Last Name is required' to the `messages` array.
+    - If email address is empty, add 'Email is required' to the `messages` array.
+- Write a for loop statement to output the values inside of the `messages` array into the div with the id of `error-list`
+- Create a javascript object called `user` with the following properties 
+    - firstname - Set the value of it it to the first name input
+    - lastname - Set the value of it it to the last name input
+    - email - Set the value of it it to the email input
+- Add the following *method* to the `user` object
+    - fullname - make this equal to the first and last name with a space inbetween them.
 
-
-### Additional Challent
-- In part 1, 2, and 3, if the input field is invalid (it's empty or doesn't meet all of its requirements), add a class of invalid  
-
-
-## CSS 
-- Open up the webpage at [https://worthyd.github.io/dummy-sites/news-page/](https://worthyd.github.io/dummy-sites/news-page/) and recreate it to the best of your ability. Use your own html structure and classes.
+## JS Questions
+In the scripts folder you will find a file named questions.js.  Answer the set of questions in that file with the spaces provided.
