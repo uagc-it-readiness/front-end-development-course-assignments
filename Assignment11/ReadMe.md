@@ -14,6 +14,7 @@ You are being provided a document that automatically retreives the values of all
     - email - Set the value of it it to the email input
 - Add the following *method* to the `user` object
     - fullname - make this equal to the first and last name with a space inbetween them.
+- If the whole form is valid. Make an alert box appear that says "Submitted".
 
 ## JS Questions
 In the scripts folder you will find a file named questions.js.  Answer the set of questions in that file with the spaces provided.
