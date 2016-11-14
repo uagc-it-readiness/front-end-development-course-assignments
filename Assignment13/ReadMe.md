@@ -2,9 +2,11 @@
 
 Today we are going to perform an exercise that will involve enhancing an existing page with new elements.
 
+Finish Assignment 12 and copy your final product into this folder.
+
 Your final result should look and behave similar to this [https://worthyd.github.io/dummy-sites/simple-forms-1/](https://worthyd.github.io/dummy-sites/simple-forms-1/)
 
-Take things one step at a time
+Take things one step at a time.
 
 ## HTML
 Wrap the form with a `form` tag. It does not need to have any attributes set.
