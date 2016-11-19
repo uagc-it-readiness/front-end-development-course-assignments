@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width:500px;
+    margin:20px auto;
+}
+.invalid{
+    border:1px solid #a00;
+}
