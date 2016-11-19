@@ -53,9 +53,9 @@ function update() {
 
 
     //Verify both fields are filled out and make sure that the passwords match.
-    if (password.value !== '' &&
-        passwordConfirm.value !== '' &&
-        password.value !== passwordConfirm.value) {
+    if (password.value !== '' &&  //Password is filled out
+        passwordConfirm.value !== '' &&  //confirm password is filled out
+        password.value !== passwordConfirm.value) {   ///password and confirm password match
 
         errorMsg.push('Passwords must match');
 
@@ -74,24 +74,24 @@ function update() {
     }
     */
 
-    if (errorMsg.length > 0){
+    //Do we have any error messages?
+    if (errorMsg.length > 0) {
+        //Create a variable for our html messages
         var html = '';
 
-        for(var i = 0; i < errorMsg.length; i++){
+        //Loop through and add each message to our html variable
+        for (var i = 0; i < errorMsg.length; i++) {
             //html += errorMsg[i] + '<br />';            
-            html = html + errorMsg[i] + '<br />';            
+            html = html + errorMsg[i] + '<br />';
         }
+        
+        //Update our html with new string
         getElm('message').innerHTML = html;
-    }else{
+    } else {
 
+        //Everything checked out. Display a thank you message
         getElm('message').innerHTML = "Thank you for submitting your information";
     }
-
-
-
-
-
-    console.log(errorMsg);
 }
 
 var resetBtn = getElm('btnReset');
@@ -100,8 +100,9 @@ resetBtn.addEventListener('click', reset);
 function reset() {
     var inputIdArray = ['firstName', 'lastName', 'emailAddress', 'password', 'passwordConfirm'];
 
-    for(var i = 0; i < inputIdArray.length; i++){
-        getElm(inputIdArray[i]).value ='';
+    //Loop through all inputs and reset their value
+    for (var i = 0; i < inputIdArray.length; i++) {
+        getElm(inputIdArray[i]).value = '';
     }
 
 }
