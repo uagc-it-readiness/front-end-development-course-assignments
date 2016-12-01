@@ -40,3 +40,6 @@ section > section > div{
     float:left;
     width:33%;
 }
+.part3{
+    display:none;
+}
