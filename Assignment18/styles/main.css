@@ -7,8 +7,9 @@ body {
     margin:20px auto;
     font-size:20px;
 }
-.errors{
+.error{
     color:#ff0000;
+    display:none;
 }
 .invalid{
     border:1px solid #ff0000;

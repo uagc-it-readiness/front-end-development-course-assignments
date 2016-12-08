@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>Assignment 11</title>
+        <title>Assignment 18</title>
         <link rel="stylesheet" href="styles/main.css">
     </head>
 
@@ -22,22 +22,25 @@
             </div>
             <div class="input-group">
                 <label for="emailAddress">Email Address</label>
-                <input type="text" name="emailAddress" id="emailAddress" placeholder="Email Address" />
-                <span class="error requiredMsg">Last Name is required</span>
+                <input type="text" name="emailAddress" id="emailAddress" placeholder="Email Address" data-isemail="true" />
+                <span class="error requiredMsg">Email Address is required</span>
+                <span class="error emailMsg">A valid email is required</span>
             </div>
             <div class="input-group">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" placeholder="Password" />
-                <span class="error requiredMsg">Last Name is required</span>
+                <span class="error requiredMsg">Password is required</span>
+                <span class="error matchingMsg">Passwords must match</span>
             </div>
             <div class="input-group">
                 <label for="password">Confirm Password</label>
                 <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Confirm Password" />
-                <span class="error requiredMsg">Last Name is required</span>
+                <span class="error requiredMsg">Confirm Password is required</span>
             </div>
             <div class="input-group">
                 <label for="about">Tell us about yourself</label>
                 <textarea name="" id="about" placeholder="About"></textarea>
+                <span class="error requiredMsg">About yourself is required</span>
             </div>
             <section class="control-panel">
                 <button id="btnSubmit" type="button">Submit</button>
