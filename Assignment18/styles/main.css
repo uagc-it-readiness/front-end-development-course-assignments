@@ -7,7 +7,7 @@ body {
     margin:20px auto;
     font-size:20px;
 }
-.error{
+.errors{
     color:#ff0000;
     display:none;
 }
@@ -35,7 +35,9 @@ body {
     font-size:20px;
 }
 
-
+.successmsg{
+    display:none;
+}
 .invalid::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #ff0000;
 }
