@@ -2,8 +2,17 @@ $(document).ready(function () {
     $('input').on('blur', function () {
         var input = $(this);
         validateInput(input)
+
+        if(input.data('isEmail') === 'true'){
+            validateEmail(input);
+        }
+
+        if (input.attr('type') === 'password'){
+            validatePassword();
+        }
     });
-    $('#btnSubmit').on('click', function(){
+
+    $('#btnSubmit').on('click', function () {
         validateAllInputs();
     });
 });
@@ -14,17 +23,51 @@ function validateInput(input) {
     var msgSpan = input.closest('.input-group').find('.requiredMsg');
     if (val === '') {
         msgSpan.fadeIn();
+        input.addClass('invalid');
     } else {
         msgSpan.fadeOut();
+        input.removeClass('invalid');
     }
 }
 
-function validateAllInputs(){
-    var allInputs = $('input');
+function validateEmail(email) {
+    var emailValue = email.val();
+
+    var emailErrorMsg = email.closest('.input-group').find('.emailMsg');
+    if (emailValue !== '' && emailValue.indexOf('@') > -1 && emailValue.indexOf('@') > -1) {
+        emailErrorMsg.fadeOut();
+        email.removeClass('invalid');
+    } else {
+        emailErrorMsg.fadeIn();
+        email.addClass('invalid');
+    }
+
+}
+
+function validatePassword(){
+    var password = $('#password');
+    var passwordConfirm = $('#passwordConfirm');
     
-    for(var i = 0; i < allInputs.length; i++){
+}
+
+
+
+function validateAllInputs() {
+    var allInputs = $('input');
+
+    for (var i = 0; i < allInputs.length; i++) {
         validateInput(allInputs.eq(i));
     }
+
+    var invalidInputCount = $('.invalid').length;
+
+    if (invalidInputCount > 0) {
+        $('#messages').html('Form is Invalid');
+    } else {
+        $('#messages').html('Thank you for your submission.');
+        $('.form-elements').fadeOut();
+    }
+
 }
 
 
