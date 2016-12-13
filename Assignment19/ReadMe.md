@@ -1,22 +1,34 @@
-# Assignment 18 - Squashing bugs
-I tried converting assignment 13 into jQuery, but it is still not 100% working. I need your help to finish it out.  Read the comments in code and use your Chrome Console to fix all the issues.
+# Assignment 19 - Appending and Prepending 
+Today we are going to work on a short assignment to learn how to do an ajax request and how to prepend/append html to an existing element
 
-## Known Issues
+## Overview
+I've provided you two urls in main.js.  I want you to write two ajax requests and perform different actions for each url.
 
-- I wrote some css to make all validation messages red and to hide them on page load.  It's not working properly.
-- The `textarea` for 'Tell us about yourself' isn't getting caught in the validation when it has a 'blur' event.
-- There is a function to validate email address, but it is throwing an error when I try to use it.
-- The `valdiateRequiredInput` should fadeIn the corresponding `requiredMsg` span tag.
-- The `validateEmail` isn't working as I had expected it to.  It is showing an error when it is valid and it's not turning red when it is invalid. 
-- `validatePassword` should only validate when both passwordValue and passwordConfrimValue are filled out. I thought I had added this, but it stopped working.
-- I want to re-run all the validation when the submit button is clicked.  I copied and pasted some code from another part of the application, but it doesn't seem to be working either.
-- The form should fade out and fade in a success message when the form is properly filled out.  I have the HTML in place, but the CSS and JS aren't working.
+- Take the variable `appendUrl` and perform a get request against the URL
+- The result set will be an array of objects.  The object structure will look something like this:
+```
+[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "qui est esse",
+    "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+  }
+]
+```
+- In your ajax callback, select the unordered list with the id of `append` and store it in a variable.
+- Loop through the array of objects and append a new list item  to your unordered list for each object.
+- The list item syntax should be something similar to:
+```
+    <li>Index: [index] Title: [object title]</li>
+```
 
+- Perform the same task with the `prependUrl`, but prepend to the `prepend` unordered list.  
 
-## Tips & Hints
-- Test selectors
-- Work from top to bottom
-- Check for spelling mistakes
-- Read the comments to see what it should be doing.
-- Check for commented out code that shouldn't be commented out.
-- Look in the css, html, and js for errors. Don't focus solely on JS.
+Your final product should behave like this [https://worthyd.github.io/dummy-sites/Assignment19/](https://worthyd.github.io/dummy-sites/Assignment19/)
