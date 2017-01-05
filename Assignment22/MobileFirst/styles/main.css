@@ -30,44 +30,28 @@ a:hover {
     text-decoration: underline
 }
 
-.class1 {
+.main-container {
     margin: 0 auto;
 }
 
-.class2 {
+.main-header {
     margin: 10px 0
 }
 
-.class2 .class3 {
-    display: block;
-    margin: 10px
-}
-
-.class2 nav {
+.main-header nav {
     background: #a00;
 }
 
-.class2 nav a {
+.main-header nav a {
     color: #fff;
     display: block;
     font-size: 24px;
     padding: 5px 15px
 }
 
-.class4 .class5 {
-    padding: 10px;
-    margin: 0 auto;
-}
-
-.class4 .class5 img {
+.hero img {
     width: 100%;
     height: auto
-}
-
-.class4 .class6 {
-    float: right;
-    padding: 10px;
-    width: 33.33333%
 }
 
 section {
@@ -83,27 +67,16 @@ section .section-header {
     text-align: center
 }
 
-.class7 {
-    list-style: none;
-    margin: 0;
-    padding: 10px
-}
-
-.class7 li {
-    float: left;
-    width: 20%
-}
-
-section .class8 {
+section .article-list {
     margin-top: 10px;
     padding: 10px;
 }
 
-.class8 article {
+.article-list article {
     border-bottom: 1px solid #a00
 }
 
-.class8 article img {
+.article-list article img {
     display: block;
     width: 100%;
     padding: 10px
