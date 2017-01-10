@@ -3,11 +3,6 @@ ul {
     padding: 0
 }
 
-a,
-nav li {
-    display: inline-block
-}
-
 * {
     box-sizing: border-box
 }
@@ -16,23 +11,9 @@ body {
     margin: 0
 }
 
-a {
+nav a {
     color: #fff;
     text-decoration: none
-}
-
-.image-gallery li:hover h3,
-a:hover {
-    text-decoration: underline
-}
-
-header {
-    background: #a00
-}
-
-footer {
-    background: #333;
-    clear: both
 }
 
 ul {
@@ -46,7 +27,11 @@ nav ul {
 }
 
 nav li a {
-    padding-right: 20px
+    background: #a00;
+    border: 1px solid white;
+    display: block;
+    padding: 10px;
+    width: 250px;
 }
 
 footer nav,
@@ -56,15 +41,17 @@ section {
     margin: 0 auto
 }
 
-.image-gallery li {
-    float: left;
-    text-align: center;
-    width: 25%
+.pager a {
+    color: #a00;
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #a00;
 }
 
-
-.image-gallery li:hover img {
-    border: 2px solid #333;
-    display: block;
-    margin: 0 auto
+.socialLinks a {
+    color: #a00;
+    text-decoration: none;
+    display: inline-block;
 }

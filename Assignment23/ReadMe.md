@@ -1,19 +1,35 @@
-# Practice implementing responsive on an existing website
+# Practice implementing custom fonts and responsive practice 
 
-I've included two websites in the project.  One is a site already designed for desktop, but no mobile. The other is an existing mobile website that needs to look better on a desktop browser.
+## Part 1 - Custom Font 
+Make the font of index.html 'Roboto'. Get the font off of google fonts.
 
-## Part 1 - Desktop first
+## Part 2 - Icon Fonts
 
-In the DesktopFirst you'll find a website that acts as a gallery of sorts.  It has some hard defined widths and scroll bars appear on the screen when the browser is too small.
+- Download [http://fontawesome.io/](http://fontawesome.io/) and add a reference to it in index.html
+- Add a `chevron-right` to each link in the nav menu and position it to the right of the link 
+- Replace the following in the div that has the class of pager
+  - &lt;&lt; with an `angle-double-left`
+  - &lt; with an `angle-left`
+  - &gt; with an `angle-right`
+  - &gt;&gt; with an `angle-double-right`
+- Replace each social link with a copy of their respective social icons.
 
-Update the existing CSS to make the content appear more mobile friendly.  Use Max-Width media queries and work form large resolutions downwards.
 
-The end result should be have similar to (this site)[https://worthyd.github.io/dummy-sites/responsive-demo/], but it does not need to be exact.
 
-## Part 2 - Mobile first
-In the MobileFirst folder you will find a website with mobile styles already being applied to it.  
+## Part 1 and Part 2 Result
 
-Update the CSS and the HTML to make it render better on desktop.  Use Min-Width media quires and max-width CSS to help make this look better on desktop.
+![final](result.png)
 
-The desired layout should look something similar to (this)[https://worthyd.github.io/dummy-sites/mobile-first-result] when viewed at a desktop resolution, but does not have to exactly match.
+
+
+## Part 3 - Grid Practice 
+
+Do the following inside of grid.html and grid.css. 
+Use a mobile first approach and apply the following rules.
+
+- Articles should be 1 column when below 576px
+- Articles should be 2 columns when above 576px and below 768px;
+- Articles should be 3 columns when above 768px and below 992px;
+- Articles should be 4 columns when above 992px and below 1200px;
+- Articles should be 6 columns when above 1200px
 
