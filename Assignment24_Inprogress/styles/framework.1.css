@@ -1,0 +1,108 @@
+/*
+        ///
+
+        1.0 - Main Layout
+        2.0 - Navigation
+        ........
+
+        4.0 - Tablet Resolutions
+        4.1 - Nav
+        5.0 - Desktop
+        5.1 = D
+
+
+*/
+
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cell {
+    border: 1px solid black;
+    background: lightgrey;
+}
+
+
+/*
+  .nav 
+  .logo 
+  .nav-links
+
+
+  //////////
+  .hero
+
+
+  ///////
+  .callouts
+  .callout
+
+  //
+  .feature-full
+  .feature-highlight
+
+
+  /////////////
+  .primary-content
+  .sidebar
+  .related-content
+
+
+
+  
+
+*/
+/**========================
+    2.0 - Navigation
+===================**/
+.nav{
+background:#ff0000;
+}
+
+.logo {
+    max-width: 100%;
+    display:block;
+
+}
+.links{
+    list-style: none;
+}
+
+/**========================
+    2.1 - Navigation Tablet
+===================**/
+@media screen and (min-width:768px) {
+    .nav{
+        overflow:hidden;
+        height:80px;
+    }
+
+    .nav .logo{
+        float:left;
+        width:33.333%;
+        height:100%;
+    }
+    .nav .links{
+        float:right;
+    }
+
+}
+/**========================
+    2.2 - Navigation Desktop 
+===================**/
+@media screen and (min-width:992px) {
+    .nav{
+    }
+
+    .nav .logo{
+    }
+    .nav .link{
+    }
+}
+

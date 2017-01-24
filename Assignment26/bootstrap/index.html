@@ -1,0 +1,53 @@
+<html>
+
+    <head>
+        <title>Bootstrap</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Layout based on:http://foundation.zurb.com/templates-previews-sites-f6/news-magazine.html -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous" />
+        <styles>
+        </styles>
+    </head>
+
+    <body>
+        <p>
+            There is wire up the button below this paragraph to show the modal with the id of "mdlFirstModal"
+        </p>
+        <button class="btn btn-primary">Show Modal</button>
+        <!-- Modal -->
+        <div class="modal fade" id="mdlFirstModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        I don't have any specific content, but I just want to show up on the screen
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p>
+            Use the documentation for Bootstrap's Modal and update the next modal.
+        </p>
+        <ol>
+            <li>Remove the fade effect</li>
+            <li>Add a class to make the modal small</li>
+            <li>Add a footer</li>
+            <li>Add a heder</li>
+        </ol>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#secondModal">Second modal</button>
+        <div class="modal fade" id="secondModal"        >
+            <div class="modal-dialog" >
+                <div class="modal-content">
+                    <div class="modal-body">
+                        I want to be a small modal with no animations... and I want a header and footer.
+                    </div>
+ 
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
