@@ -1,0 +1,84 @@
+<html>
+
+    <head>
+        <title>Bootstrap</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous" />
+    </head>
+
+    <body>
+        <p>
+            There is wire up the button below this paragraph to show the modal with the id of "mdlFirstModal"
+        </p>
+        <!--<button class="btn btn-primary" data-toggle="modal" data-target="#mdlFirstModal">Show Modal</button>-->
+        <button class="btn btn-primary" id="one">Show Modal</button>
+        <!-- Modal -->
+        <div class="modal fade" id="mdlFirstModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        I don't have any specific content, but I just want to show up on the screen
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p>
+            Use the documentation for Bootstrap's Modal and update the next modal.
+        </p>
+        <ol>
+            <li>Remove the fade effect</li>
+            <li>Add a class to make the modal small</li>
+            <li>Add a footer</li>
+            <li>Add a heder</li>
+        </ol>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#secondModal">Second modal</button>
+        <div class="modal" id="secondModal">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a href class="close" data-dismiss="modal">blarg</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis officiis, quasi totam veniam
+                            ullam iste accusantium quaerat, fuga sed sunt distinctio, eius eaque asperiores excepturi sint
+                            facere temporibus necessitatibus ut!</p>
+                    </div>
+                    <div class="modal-body">
+                        I want to be a small modal with no animations... and I want a header and footer.
+                    </div>
+                    <div class="modal-footer">
+                        <a href class="close" data-dismiss="modal">blarg</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis officiis, quasi totam veniam
+                            ullam iste accusantium quaerat, fuga sed sunt distinctio, eius eaque asperiores excepturi sint
+                            facere temporibus necessitatibus ut!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+            <script>
+                $(document).ready(function () {
+                    $('#one').on('click', function () {
+                        $('#mdlFirstModal').modal({
+                                keyboard: false,
+                            }
+
+                        );
+
+                    });
+                    $('#mdlFirstModal').on('show.bs.modal', function (e) {
+                        console.log('showing');
+                    })
+                    $('#mdlFirstModal').on('hide.bs.modal', function (e) {
+                        console.log('hiding');
+                    })
+ 
+                });
+            </script>
+    </body>
+
+</html>
