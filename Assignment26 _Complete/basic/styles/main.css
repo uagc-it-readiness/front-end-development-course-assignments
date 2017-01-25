@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    width: 950px;
+    margin: 10px auto;
+}
+
+p {
+    font-size: 30px;
+    margin: 100px
+}
+
+.modal p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.overlay {
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity:.4;
+}
+
+.modal {
+
+    display:none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 400px;
+    border: 1px solid black;
+    background: #fff;
+}
