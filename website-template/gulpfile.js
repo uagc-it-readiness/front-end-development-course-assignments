@@ -11,6 +11,7 @@ gulp.task('browserSync',  function () {
         }
     })
 });
+console.log('testing');
 
 //Starts up a dev server for us
 //It also watches files and reloads the browser when they change.
